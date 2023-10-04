@@ -1,0 +1,39 @@
+@use "./variables" as *;
+
+@mixin progress(){
+    position: relative;
+    .progress{
+        width: 50%;
+        height: 2px;
+        position: absolute;
+        top: 0;left: 0;
+        transform: translateX(50%);
+        background-color: $grayishBlue;
+        border-radius: 5px;
+        overflow: hidden;
+        
+        span{
+            margin:0;
+            width: 40%;
+            height: 100%;
+            position: absolute;
+            transform: translateX(0);
+            background-color: $neonGreen;
+            animation: moveprogress 2s .4s ease infinite;
+        }
+    }
+    
+}
+
+
+@keyframes moveprogress{
+    0%{
+        left: 0;
+    }
+    50%{
+        left: 60%;
+    }
+    100%{
+        left: 0;
+    }
+}

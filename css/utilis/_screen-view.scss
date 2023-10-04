@@ -1,0 +1,10 @@
+@mixin mobile-view(){
+    @media (max-width : 375px){
+        @content;
+    }
+}
+@mixin desktop-view(){
+    @media screen and (min-width : 376px){
+        @content;
+    }
+}

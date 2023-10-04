@@ -8,15 +8,40 @@
         .attribution { font-size: 11px; text-align: center; }
         .attribution a { color: hsl(228, 45%, 44%); }
     </style>
+
+    <link rel="stylesheet" href="./css/style.css">
     <title>advice generator app</title>
 </head>
 <body>
     
+    <div class="advice-box">
+        <div class="advice-num">
+            <div class="progress"><span></span></div>
+            <p id="advice-id"></p>
+        </div>
+        <div class="advice-text">
+            <div class="progress"><span></span></div>
+            <p id="advice-text"></p>
+        </div>
+        <picture class="divider-container">
+            <source media="(min-width: 376px)" srcset="images/pattern-divider-desktop.svg"/>
+            <img src="images/pattern-divider-mobile.svg" alt="divider line">
+        </picture>
+        <div class="icon-container" id="dice-icon">
+            <img src="images/icon-dice.svg" alt="icon for change advice">
+        </div>
+    </div>
+
+    <div class="err-box">
+        <p id="error"></p>
+    </div>
 
 
     <div class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-        Coded by <a href="#">Jinx Devo</a>.
+        Coded by <a href="#">Khaled Sameh (Jinx Devo)</a>.
     </div>
+
+    <script src="app.js"></script>
 </body>
 </html>

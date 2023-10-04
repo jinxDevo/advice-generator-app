@@ -1,0 +1,13 @@
+@use "./variables" as *;
+
+
+@mixin box(){
+    border-radius: 8px;
+    background-color: $darkGrayishBlue;
+    box-shadow: 0px 0px 10px 5px hsla(0, 0%, 0%, 0.085);
+    >*{
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
